@@ -53,4 +53,61 @@ git clone https://github.com/RichardBarron27/redspecter-port-surge-guardian.git
 cd redspecter-port-surge-guardian
 chmod +x port-surge-guardian.sh
 sudo ./port-surge-guardian.sh
+| Flag | Meaning         | Default                            |
+| ---- | --------------- | ---------------------------------- |
+| `-i` | Check interval  | 5s                                 |
+| `-s` | Surge threshold | +10                                |
+| `-l` | Log file path   | `/var/log/port-surge-guardian.log` |
+🧪 Example Test
 
+Terminal #1 — Run tool
+Terminal #2 — Create listener:
+
+python3 -m http.server 8080
+
+
+Expected alert:
+
+[NEW] Listening ports opened:
+  + tcp:8080
+
+
+Stop server → expect:
+
+[CLOSED] Listening ports closed:
+  - tcp:8080
+📌 Screenshot coming soon
+🛑 Safety & Ethics
+
+Defensive-only
+
+Zero packet generation
+
+No firewall/system changes
+
+Use only with proper authorization
+
+🟥 Red Specter values:
+Ethical Intelligence. Precision. Integrity.
+🚀 Roadmap
+
+Allowlist / ignore known ports
+
+JSON log format for SIEM
+
+Slack / webhook alerts
+
+Dashboard & metrics view
+
+Integrate with DDoS Flood Sentinel for correlated host attacks
+❤️ Support Red Specter
+
+If this helps you, you can support future development:
+
+👉 Buy me a coffee:
+https://www.buymeacoffee.com/redspecter
+
+💼 PayPal:
+https://paypal.me/richardbarron1747
+
+Your support helps build more cyber defense tools. Thank you 🛡️⚡
