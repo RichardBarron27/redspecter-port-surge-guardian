@@ -1,20 +1,15 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/RichardBarron27/red-specter-offensive-framework/main/assets/red-specter-logo.png" alt="Red Specter Logo" width="200">
-</p>
-
-<br>
-
-# 🛡️ Red Specter: Port Surge Guardian (v0.1 – Bash MVP)
-
-<p>
   <a href="https://github.com/RichardBarron27/redspecter-port-surge-guardian/stargazers">
-    <img src="https://img.shields.io/github/stars/RichardBarron27/redspecter-port-surge-guardian?style=flat&logo=github" alt="Stars">
+    <img src="https://img.shields.io/github/stars/RichardBarron27/redspecter-port-surge-guardian?logo=github" alt="Stars">
   </a>
-  <img src="https://img.shields.io/github/last-commit/RichardBarron27/redspecter-port-surge-guardian" alt="Last Commit">
+  <a href="https://github.com/RichardBarron27/redspecter-port-surge-guardian/commits/main">
+    <img src="https://img.shields.io/github/last-commit/RichardBarron27/redspecter-port-surge-guardian?logo=github" alt="Last Commit">
+  </a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs Welcome">
   <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Kali-purple" alt="Platform">
-  <img src="https://img.shields.io/github/license/RichardBarron27/redspecter-port-surge-guardian" alt="MIT License">
+  <img src="https://img.shields.io/github/license/RichardBarron27/redspecter-port-surge-guardian" alt="MIT license">
 </p>
+
 
 > **Monitors listening ports and detects sudden exposure or port surges on a host.**  
 Part of the **Red Specter | VIGIL** defensive tooling ecosystem.
