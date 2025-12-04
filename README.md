@@ -6,11 +6,15 @@
 
 # 🛡️ Red Specter: Port Surge Guardian (v0.1 – Bash MVP)
 
-[![Stars](https://img.shields.io/github/stars/RichardBarron27/redspecter-port-surge-guardian?style=flat&logo=github)](https://github.com/RichardBarron27/redspecter-port-surge-guardian/stargazers)
-![Last Commit](https://img.shields.io/github/last-commit/RichardBarron27/redspecter-port-surge-guardian)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Kali-purple)
-![License](https://img.shields.io/github/license/RichardBarron27/redspecter-port-surge-guardian)
+<p>
+  <a href="https://github.com/RichardBarron27/redspecter-port-surge-guardian/stargazers">
+    <img src="https://img.shields.io/github/stars/RichardBarron27/redspecter-port-surge-guardian?style=flat&logo=github" alt="Stars">
+  </a>
+  <img src="https://img.shields.io/github/last-commit/RichardBarron27/redspecter-port-surge-guardian" alt="Last Commit">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs Welcome">
+  <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Kali-purple" alt="Platform">
+  <img src="https://img.shields.io/github/license/RichardBarron27/redspecter-port-surge-guardian" alt="MIT License">
+</p>
 
 > **Monitors listening ports and detects sudden exposure or port surges on a host.**  
 Part of the **Red Specter | VIGIL** defensive tooling ecosystem.
@@ -26,23 +30,7 @@ Port Surge Guardian continuously tracks **listening TCP/UDP ports** and:
 ✔ Alerts on **port surges**  
 ✔ Logs everything to `/var/log/port-surge-guardian.log`  
 
-Uses `ss` – a **read-only view** of system sockets.
-
----
-
-## 🧠 Why It Exists
-
-Attackers:
-- Drop **bind shells**
-- Expose new listeners for **exfil**
-- Misconfigure deployments
-- Hide malware behind high ports
-
-Most admins **never see** when a port pops open.
-
-Port Surge Guardian acts as a **tripwire**:
-
-> “What just started listening on this machine?”
+Uses `ss` for a **read-only view** of socket state.
 
 ---
 
@@ -53,16 +41,7 @@ git clone https://github.com/RichardBarron27/redspecter-port-surge-guardian.git
 cd redspecter-port-surge-guardian
 chmod +x port-surge-guardian.sh
 sudo ./port-surge-guardian.sh
-| Flag | Meaning         | Default                            |
-| ---- | --------------- | ---------------------------------- |
-| `-i` | Check interval  | 5s                                 |
-| `-s` | Surge threshold | +10                                |
-| `-l` | Log file path   | `/var/log/port-surge-guardian.log` |
 🧪 Example Test
-
-Terminal #1 — Run tool
-Terminal #2 — Create listener:
-
 python3 -m http.server 8080
 
 
@@ -72,42 +51,46 @@ Expected alert:
   + tcp:8080
 
 
-Stop server → expect:
+Stop server:
 
 [CLOSED] Listening ports closed:
   - tcp:8080
+
+
 📌 Screenshot coming soon
+
 🛑 Safety & Ethics
 
-Defensive-only
+Read-only system monitoring
 
-Zero packet generation
+No packet generation
 
-No firewall/system changes
+No firewall or network changes
 
-Use only with proper authorization
+Only use on systems you are authorized to monitor
 
-🟥 Red Specter values:
-Ethical Intelligence. Precision. Integrity.
 🚀 Roadmap
 
-Allowlist / ignore known ports
+Port allow/blocklist (ignore known ports)
 
-JSON log format for SIEM
+JSON logs for SIEM ingestion
 
-Slack / webhook alerts
+Slack / webhook alerting
 
-Dashboard & metrics view
+Dashboard view of port changes
 
-Integrate with DDoS Flood Sentinel for correlated host attacks
+Correlation with DDoS Flood Sentinel for full host defense
+
 ❤️ Support Red Specter
 
-If this helps you, you can support future development:
+If this helps you, support future development:
 
-👉 Buy me a coffee:
+☕ Buy Me A Coffee
 https://www.buymeacoffee.com/redspecter
 
-💼 PayPal:
+💼 PayPal
 https://paypal.me/richardbarron1747
 
-Your support helps build more cyber defense tools. Thank you 🛡️⚡
+<p align="center"><strong>Created by Red Specter | VIGIL</strong><br> Ethical Offensive Security — powered by smart defense. </p> ```
+
+END COMPLETE README
