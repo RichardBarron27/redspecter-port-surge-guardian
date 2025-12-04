@@ -40,3 +40,71 @@ git clone https://github.com/RichardBarron27/redspecter-port-surge-guardian.git
 cd redspecter-port-surge-guardian
 chmod +x port-surge-guardian.sh
 sudo ./port-surge-guardian.sh
+
+Options
+
+| Flag                       | Meaning                      | Default                            |
+| -------------------------- | ---------------------------- | ---------------------------------- |
+| `-i` / `--interval`        | Seconds between checks       | `5`                                |
+| `-s` / `--surge-threshold` | Extra ports to trigger SURGE | `10`                               |
+| `-l` / `--log-file`        | Log file path                | `/var/log/port-surge-guardian.log` |
+
+🧪 Example Test
+
+In one terminal:
+
+sudo ./port-surge-guardian.sh
+
+
+In a second terminal, start a simple HTTP server:
+
+python3 -m http.server 8080
+
+
+You should see something like:
+
+[NEW] Listening ports opened:
+  + tcp:8080
+
+
+Then stop the server with Ctrl + C and after a few seconds:
+
+[CLOSED] Listening ports closed:
+  - tcp:8080
+
+🛑 Safety & Ethics
+
+Defensive-only
+
+No packet generation
+
+No firewall or network modifications
+
+Only run on systems and networks you are authorized to monitor
+
+Red Specter values:
+Ethical Intelligence. Precision. Integrity.
+
+🚀 Roadmap
+
+Allowlist for known-good ports/services
+
+JSON log output for SIEM ingestion
+
+Slack / webhook alert integrations
+
+TUI / dashboard for port-change visualization
+
+Correlation with DDoS Flood Sentinel for combined host defense
+
+❤️ Support Red Specter
+
+If this tool (and the wider Red Specter suite) helps you, you can support future development:
+
+☕ Buy Me A Coffee
+https://www.buymeacoffee.com/redspecter
+
+💼 PayPal
+https://paypal.me/richardbarron1747
+
+Thank you — your support helps build more defensive and ethical security tools. 🛡️⚡
