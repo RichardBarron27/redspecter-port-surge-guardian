@@ -91,6 +91,4 @@ https://www.buymeacoffee.com/redspecter
 💼 PayPal
 https://paypal.me/richardbarron1747
 
-<p align="center"><strong>Created by Red Specter | VIGIL</strong><br> Ethical Offensive Security — powered by smart defense. </p> ```
 
-END COMPLETE README
