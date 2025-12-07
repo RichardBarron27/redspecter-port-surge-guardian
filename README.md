@@ -108,3 +108,5 @@ https://www.buymeacoffee.com/redspecter
 https://paypal.me/richardbarron1747
 
 Thank you — your support helps build more defensive and ethical security tools. 🛡️⚡
+
+Notice for Users: If you cloned this and found it useful, please consider starring the repo! Stars help with visibility and let me know which projects to maintain.
